@@ -193,7 +193,7 @@ limitations under the License.
           <gr-account-list
               max-count="1"
               id="assigneeValue"
-              placeholder="Set assignee..."
+              placeholder="设置代理者..."
               accounts="{{_assignee}}"
               change="[[change]]"
               readonly="[[_computeAssigneeReadOnly(_mutable, change)]]"
@@ -301,7 +301,7 @@ limitations under the License.
       </section>
       <template is="dom-if" if="[[serverConfig.note_db_enabled]]">
         <section class="hashtag">
-          <span class="title">话题标签</span>
+          <span class="title">Hashtag</span>
           <span class="value">
             <template is="dom-repeat" items="[[change.hashtags]]">
               <gr-linked-chip
